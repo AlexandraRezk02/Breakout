@@ -3,6 +3,7 @@ body{
 	margin: 0 auto;
 	display: block;
 }
+
 h1 {
 	width: 150px;
 	height: 50px;
@@ -20,6 +21,7 @@ div{
 	width: 480px;
 	height: 320px;
 }
+
 #directions{
 	width: 640px;
 	height: 420px;
@@ -31,6 +33,7 @@ div{
 p{
 	padding: 10px;
 }
+
 #mouse{
 	width: 30px;
 	height: 30px;
@@ -41,6 +44,7 @@ p{
 #arrowKeys{
 	margin: 0 auto;
 }
+
 a {
 	text-decoration: none;
 	padding: 10px 20px;
