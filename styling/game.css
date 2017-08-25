@@ -12,14 +12,17 @@ h1 {
 canvas {
 	background: #eee;
 	margin: 0 auto;
+	display: 'block';
 }
 
 div{
 	padding: 10px;
+	width: 480px;
+	height: 320px;
 }
 #directions{
-	width: 500px;
-	height: 500px;
+	width: 480px;
+	height: 320px;
 	margin: 0 auto;
 	text-align: center;
 	border-style: dotted;
@@ -51,4 +54,28 @@ button{
 
 button:hover{
 	cursor: pointer;
+}
+
+#gameOver{
+	display: none;
+	margin: 0 auto;
+	width: 640px;
+	height: 420px;
+}
+
+#loseScreen{
+	width: 640px;
+	height: 420px;
+}
+
+#youWin{
+	display: none;
+	margin: 0 auto;
+	width: 640px;
+	height: 420px;
+}
+
+#winScreen{
+	width: 640px;
+	height: 420px;
 }

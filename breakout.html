@@ -8,11 +8,22 @@
 	
 	<body>
 		<h1 id="title">Breakout</h1>
-		<canvas id="myCanvas" width="480" height="320"></canvas>
+		<canvas id="myCanvas" width="640" height="420"></canvas>
 		
+		<div id="gameOver">
+			<img src="images/game_over.jpeg" id="loseScreen" alt="You Lose"/>
+			<button id="restart"><a href="breakout.html">Want to Play Again?</a></button>
+		</div>
+		
+		<div id="youWin">
+			<img src="images/winner_pic.jpeg" id="winScreen" alt="You Win"/>
+			<button id="restart"><a href="breakout.html">Want to Play Again?</a></button>
+		</div>
 		</body>
+		
 		<script src="js/game_controls.js"></script>
 		<script src="js/draw_assets.js"></script>
 		<script src="js/collision_detection.js"></script>
+		<script src="js/game_over.js"></script>
 		<script src="js/breakout.js"></script>
 </html>

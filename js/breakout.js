@@ -15,8 +15,8 @@
 			var rightPressed = false;
 			var leftPressed = false;
 			//brick variables
-			var brickRowCount = 3;
-			var brickColumnCount = 5;
+			var brickRowCount = 5;
+			var brickColumnCount = 7;
 			var brickWidth = 75;
 			var brickHeight = 20;
 			var brickPadding = 10;
@@ -52,25 +52,32 @@
 				if(y + dy < ballRadius) {
 					dy = -dy;
 					//if the ball touches the paddle it will bounce back
-				} else if (y + dy > canvas.height-ballRadius) {
-					if(x > paddleX && x < paddleX + paddleWidth){
+				} 
+				else if (y + dy > canvas.height-ballRadius) 
+				{
+					if(x > paddleX && x < paddleX + paddleWidth)
+					{
 						dy = -dy;
 					}
 					//if it misses the paddle and you have no lives you lose
-				else{
-					lives--;
-					if(!lives){
-						alert("GAME OVER");
-						document.location.reload();
-					} //otherwise you start over until you have no lives
-						else{
-							x = canvas.width/2;
-							y = canvas.height - 30;
-							dx = 3;
-							dy= -3;
-							paddleX = (canvas.width - paddleWidth)/2;
+					
+					else{
+						lives--;
+						if(!lives)
+						{
+							var a = document.getElementById('gameOver');
+									a.style.display = 'block';
+									canvas.style.display = 'none';	
+						} //otherwise you start over until you have no lives
+							else
+							{
+								x = canvas.width/2;
+								y = canvas.height - 30;
+								dx = 3;
+								dy= -3;
+								paddleX = (canvas.width - paddleWidth)/2;
+							}
 						}
-					}
 				}
 				
 				//When the right or left arrow key is pressed and the paddle is within the canvas boundries the paddle moves 7px/frame

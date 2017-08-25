@@ -9,8 +9,13 @@ function collisionDetection(){
 							b.status = 0;
 							score++;
 							if(score == brickRowCount * brickColumnCount){
-								alert("YOU WIN, CONGRATULATIONS!");
-								document.location.reload();
+								var a = document.getElementById('youWin');
+								var b = document.getElementById('winScreen');
+								var c = document.getElementById('loseScreen');
+									a.style.display = 'block';
+									b.style.display = 'block';
+									c.style.display = 'none';
+									canvas.style.display = 'none';
 							}
 							}
 						}
