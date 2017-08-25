@@ -66,7 +66,9 @@
 						if(!lives)
 						{
 							var a = document.getElementById('gameOver');
+							var b = document.getElementById('youWin');
 									a.style.display = 'block';
+									b.style.display = 'none';
 									canvas.style.display = 'none';	
 						} //otherwise you start over until you have no lives
 							else
